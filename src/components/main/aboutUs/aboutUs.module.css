@@ -1,0 +1,41 @@
+.container {
+	display: flex;
+	justify-content: flex-end;
+	background-image: url(/src/img/aboutUsBgr.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.textContainer {
+	margin: 21% 0;
+	width: 410px;
+	position: relative;
+}
+.textContainer::after,
+.textContainer::before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: -40px;
+	left: -87px;
+	width: 50px;
+	height: 0px;
+	border-bottom: 3px solid #fff;
+}
+.textContainer::after {
+	/* top: -38px; */
+	left: -40px;
+	height: 120%;
+	border-left: 3px solid #fff;
+}
+
+.text {
+	margin: 0;
+	font-weight: 500;
+	font-size: 23px;
+	line-height: 28px;
+	letter-spacing: -0.01em;
+}
+.text + .text {
+	margin: 25px 0 0;
+}
