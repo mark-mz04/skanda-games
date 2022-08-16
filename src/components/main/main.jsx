@@ -1,5 +1,6 @@
 import React from 'react';
 import { AboutUs } from './aboutUs/aboutUs';
+import { Form } from './form/form';
 import { Advantages } from './advantages/advantages';
 import { Services } from './services/services';
 import { WayWeWork } from './wayWeWork/wayWeWork';
@@ -12,6 +13,7 @@ export const Main = () => {
 		<main>
 			<AboutUs />
 			<Services />
+			<Form />
 			<Advantages />
 			<WayWeWork />
 			<OurResults />

@@ -1,0 +1,46 @@
+.container {
+	padding: 130px 280px;
+	background-image: url(/src/img/formBgr.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.formContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.input {
+	margin: 0 0 15px;
+	padding: 30px 30px 10px;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: -0.02em;
+	color: #000000;
+	border-style: none;
+	border-radius: 10px;
+}
+
+.numberBtnContainer {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.inputNumber {
+	margin: 0 15px 0 0;
+	width: 70%;
+}
+
+.btn {
+	padding: 20px;
+	width: 30%;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 22px;
+	text-align: end;
+	color: #ffffff;
+	background: #1b3f43;
+	border-style: none;
+	border-radius: 10px;
+}

@@ -1,4 +1,5 @@
 .container {
+	padding: 0 180px;
 	display: flex;
 	justify-content: flex-end;
 	background-image: url(/src/img/aboutUsBgr.png);
