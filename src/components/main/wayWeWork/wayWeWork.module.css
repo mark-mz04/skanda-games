@@ -1,4 +1,5 @@
 .container {
+	padding: 130px 180px;
 	background-image: url(/src/img/wayWeWorkBgr.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;

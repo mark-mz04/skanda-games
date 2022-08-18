@@ -51,7 +51,7 @@ body::after {
 }
 
 .section {
-	padding: 130px 180px;
+	padding: 130px 180px 0;
 }
 
 .title {
