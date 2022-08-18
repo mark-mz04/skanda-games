@@ -43,4 +43,5 @@
 	background: #1b3f43;
 	border-style: none;
 	border-radius: 10px;
+	filter: drop-shadow(1px 1px 5px #eec121);
 }

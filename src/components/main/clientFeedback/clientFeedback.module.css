@@ -1,0 +1,33 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	background-image: url(/src/img/clientFeedbackBgr.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.bgrTop {
+	width: 100%;
+	height: 15%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(/src/img/clientFeedbackTopBgr.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.btn {
+	margin: 30px 0 0;
+	width: 50px;
+	height: 50px;
+	align-self: center;
+	background-image: url(/src/img/feedbackBtn.svg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.btn:hover {
+	transform: rotate(180deg);
+	transition: all 0.5s;
+}

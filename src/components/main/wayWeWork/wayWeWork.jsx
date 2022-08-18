@@ -34,6 +34,8 @@ export const WayWeWork = () => {
 					We are preparing the project promotion and release.
 				</li>
 			</ul>
+
+			<div className={s.bottomGrd}></div>
 		</section>
 	);
 };

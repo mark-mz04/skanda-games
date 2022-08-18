@@ -1,0 +1,39 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.container + .container {
+	margin: 100px 0 0;
+}
+
+.clientContainer {
+	margin: 0 0 30px;
+	display: flex;
+}
+
+.img {
+	margin: 0 30px 0 0;
+	width: 120px;
+	height: 120px;
+	background-color: #229299;
+	box-shadow: -4px 3px 6px rgba(217, 217, 217, 0.94),
+		-4px 3px 18px rgba(240, 198, 50, 0.85);
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.name {
+	margin: 0 0 25px;
+	font-weight: 700;
+	font-size: 31px;
+}
+
+.text {
+	margin: 0;
+}

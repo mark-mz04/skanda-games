@@ -97,6 +97,7 @@ export const Services = () => {
 				slideList={slideList}
 				sliderContainer={s.sliderContainer}
 				slider={s.slider}
+				slideContainer={s.slideContainer}
 			/>
 			<div className={s.bottomGrd}></div>
 		</section>

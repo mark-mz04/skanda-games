@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react';
 import s from './slider.module.css';
 // import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-export const Slider = ({ sliderContainer, slider, slideList }) => {
+export const Slider = ({
+	slideList,
+	sliderContainer,
+	slider,
+	slideContainer,
+}) => {
 	const [activeIndex, setActiveIndex] = useState(0);
 
 	const prevIndex = activeIndex ? activeIndex - 1 : slideList.length - 1;
@@ -17,29 +22,29 @@ export const Slider = ({ sliderContainer, slider, slideList }) => {
 	// 	);
 	// };
 
-	useEffect(() => {
-		setInterval(() => {
-			setActiveIndex((current) => {
-				const next = current === slideList.length - 1 ? 0 : current + 1;
-				return next;
-			});
-		}, 15000);
-	}, []);
+	// useEffect(() => {
+	// 	setInterval(() => {
+	// 		setActiveIndex((current) => {
+	// 			const next = current === slideList.length - 1 ? 0 : current + 1;
+	// 			return next;
+	// 		});
+	// 	}, 15000);
+	// }, []);
 
 	return (
 		<div className={`${sliderContainer}`}>
 			{/* <FaChevronLeft onClick={handlerLeftClick} /> */}
 
 			<div className={slider}>
-				<div className={`${s.slide} ${s.slidePrev}`} key={prevIndex}>
+				<div className={`${slideContainer} ${s.slidePrev}`} key={prevIndex}>
 					{slideList[prevIndex]}
 				</div>
 
-				<div className={`${s.slide}`} key={activeIndex}>
+				<div className={`${slideContainer}`} key={activeIndex}>
 					{slideList[activeIndex]}
 				</div>
 
-				<div className={`${s.slide} ${s.slideNext}`} key={nextIndex}>
+				<div className={`${slideContainer} ${s.slideNext}`} key={nextIndex}>
 					{slideList[nextIndex]}
 				</div>
 			</div>
